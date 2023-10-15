@@ -1,0 +1,36 @@
+@import './colors.scss';
+
+$body-bg: $pale-white;
+$body-color: $tundora;
+$font-family-base: 'Open Sans', sans-serif;
+
+@import 'bootstrap/scss/bootstrap.scss';
+@import 'bootstrap-vue/src/index.scss';
+
+.modal {
+  background: rgba(253, 253, 253, 0.4);
+  backdrop-filter: blur(15px);
+}
+
+.modal-content {
+  border-radius: 20px;
+  background: var(--primary-pale-white, #fdfdfd);
+  box-shadow: 0px 4px 10px 0px rgba(130, 130, 130, 0.25);
+  width: 505px;
+  height: 496px;
+  flex-shrink: 0;
+
+  .title {
+    color: $tundora;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .text {
+    color: $tundora;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+  }
+}
